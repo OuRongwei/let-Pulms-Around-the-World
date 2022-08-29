@@ -1,0 +1,7 @@
+
+/*主题颜色*/
+page{
+  --themeColor:#00FFFF;
+  /*定义字体大小*/
+  font-size: 28rpx;
+}

@@ -1,0 +1,68 @@
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #00FFFF;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+ 
+.swiper-tab-item {
+  width: 30%;
+  color: #434343;
+  /* border:1px solid #ccc; */
+}
+ 
+.active {
+  color: rgb(89, 246, 160);
+  border-bottom: 4rpx solid rgb(89, 246, 128);
+}
+ 
+swiper {
+  text-align: center;
+}
+ 
+.all .list {
+  height: 30pt;
+}
+ 
+.clairy .list {
+  height: 30pt;
+}
+ 
+.game .list {
+  height: 30pt;
+}
+ 
+.application .list {
+  height: 30pt;
+}
+ 
+.social .list {
+  height: 30pt;
+}
+
+
+swiper{
+    width: 100%;
+    height: calc(100vw*442/810);
+}
+image{
+  
+    width: 100%;
+}
+.fontstye{
+  font-family: cursive;
+  font-size: 20px;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding: 20rpx;
+  border: 10rpx solid #00FFFF;
+  border-radius: 80rpx;
+}
+
+ 
+ 

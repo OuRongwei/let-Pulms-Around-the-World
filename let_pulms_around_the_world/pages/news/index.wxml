@@ -1,0 +1,71 @@
+<div>
+  <van-card
+  num="2"
+  tag="果树一"
+  price="50.00"
+  desc="果实甜美，近圆形，易离核，平均单果重32.8g"
+  title=""
+  thumb="{{ imageURL }}"
+>
+  <view slot="footer">
+    <van-button size="mini">预定</van-button>
+  </view>
+</van-card>
+</div>
+<div>
+  <van-card
+  num="1"
+  tag="果树二"
+  price="100.00"
+  desc="果实优良，味道甜美，年均产量约48kg，平均单果重34.6g"
+  title=""
+  thumb="{{ imageURL }}"
+  onclik="{{thumb-link}}"
+>
+  <view slot="footer">
+    <van-button size="mini">预定</van-button>
+  </view>
+</van-card>
+</div>
+<div>
+  <van-card
+  num="2"
+  tag="果树三"
+  price="50.00"
+  desc="果实中等，口感甜脆，汁水丰沛，平均单果重33.6g"
+  title=""
+  thumb="{{ imageURL }}"
+>
+  <view slot="footer">
+    <van-button size="mini">预定</van-button>
+  </view>
+</van-card>
+</div>
+<div>
+  <van-card
+  num="3"
+  tag="果树四"
+  price="80.00"
+  desc="酸甜可口，果仁饱满，平均单果重34.8g,年均产量65kg"
+  title=""
+  thumb="{{ imageURL }}"
+>
+  <view slot="footer">
+    <van-button size="mini">预定</van-button>
+  </view>
+</van-card>
+</div>
+<div>
+  <van-card
+  num="2"
+  tag="果树五"
+  price="50.00"
+  desc="果实香甜，口感极佳，年产约50kg，平均单果重36.05g"
+  title=""
+  thumb="{{ imageURL }}"
+>
+  <view slot="footer">
+    <van-button size="mini">预定</van-button>
+  </view>
+</van-card>
+</div>

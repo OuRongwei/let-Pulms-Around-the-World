@@ -1,0 +1,16 @@
+<!-- <view wx:for="{{list}}" wx:key="item.id" data-item="{{item}}" >
+  <view>{{item.question}}</view>
+  <view bindtap="selectOne">{{item.answerA}}</view>
+  <view>{{item.answerB}}</view>
+  <view>{{item.answerC}}</view>
+  <view>{{item.answerD}}</view>
+</view> -->
+
+<view wx:for="{{list}}" wx:key="index" data-item="{{item}}" >
+<view>
+  <view>{{item.question}}</view>
+  <view wx:for="{{item.ans}}" wx:key="index" data-item="{{item}}" bindtap="selectOne" >
+  <button>{{item.a}}</button>
+  </view>
+</view>
+</view>

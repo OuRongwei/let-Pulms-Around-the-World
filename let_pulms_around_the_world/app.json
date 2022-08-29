@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/hotspots/index",
+    "pages/mine/index",
+    "pages/test/index",
+    "pages/news/index",
+    "pages/search/index",
+    "pages/index/index",
+
+    "pages/classify/index",
+    "pages/login/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/aboutus/index",
+    "pages/qiandao/qiandao",
+    "pages/dati/dati",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#B3EE3A",
+    "navigationBarTitleText": "李行天下",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#F7F7F7"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#228B22",
+    "backgroundColor": "#F2F2F2",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/_home.png",
+        "selectedIconPath": "icons/home.png"
+      },
+      {
+        "pagePath": "pages/hotspots/index",
+        "text": "云养果树",
+        "iconPath": "icons/_tree.png",
+        "selectedIconPath": "icons/tree.png"
+      },
+      {
+        "pagePath": "pages/news/index",
+        "text": "果树信息",
+        "iconPath": "icons/_message.png",
+        "selectedIconPath": "icons/message.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "icons/_mine.png",
+        "selectedIconPath": "icons/mine.png"
+      } 
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

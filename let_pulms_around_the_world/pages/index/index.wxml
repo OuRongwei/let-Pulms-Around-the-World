@@ -1,0 +1,29 @@
+<div>
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+<!--
+autoplay:是否自动切换
+circular:是否采用衔接滑动
+indicator-dots:是否显示面板指示点
+interval:设置自动切换时间间隔 
+-->
+
+<swiper
+ autoplay="{{true}}"
+ circular="{{true}}"
+ indicator-dots="{{true}}"
+ interval="2000"
+>
+	<swiper-item>
+		<image mode="widthFix" src="https://z3.ax1x.com/2021/11/18/ITTXU1.jpg" />
+	</swiper-item>
+	<swiper-item>
+		<image mode="widthFix" src="https://z3.ax1x.com/2021/11/18/IT7pvD.jpg" />
+	</swiper-item>
+	<swiper-item>
+		<image mode="widthFix" src="https://z3.ax1x.com/2021/11/18/IT71Vs.jpg" />
+	</swiper-item>
+</swiper>
+
+
+<view class="fontstye"  style="white-space:pre-wrap">  巫山脆李又名巫山大李子，脆李，经考证，种植始于唐宋年间，距今已有上千年历史,巫山脆李果形端庄、质地脆嫩、汁多味香,产品远销四川、贵州、湖北等地, 2012年，巫山县与西南大学建立了县校合作关系，借助西南大学的技术、人力资源，立足自身土地资源、气候、交通自然条件和脆李产业发展基础，大力实施巫山脆李品种提纯选优与安全高效生产技术示范，推进产业规模化、标准化、品牌化进程。</view>
+</div>

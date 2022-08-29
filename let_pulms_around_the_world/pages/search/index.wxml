@@ -1,0 +1,10 @@
+
+<button catchtap="chooseimage" type="primary" wx:if="{{isAuth}}" class="uploading">上传照片</button>
+
+
+<view wx:if="{{isTrue}}">
+  <view class="img">
+  <image src="{{tempFilePaths}}" mode="aspectFill" class="aas"></image>
+</view>
+<button type="primary" class="analyze">照片分析</button>
+</view>

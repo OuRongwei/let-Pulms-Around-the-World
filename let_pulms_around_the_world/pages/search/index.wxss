@@ -1,0 +1,18 @@
+.uploading{
+  margin-top: 60rpx;
+  width: 60%;
+}
+
+.img{
+  margin: 0 auto;
+  margin-top: 20rpx;
+  border-radius: 30rpx;
+  border: 10rpx solid #faca82;
+  width: 100vw;
+}
+
+
+.analyze{
+  margin-top: 40rpx;
+  width: 60%;
+}

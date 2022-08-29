@@ -1,0 +1,83 @@
+<!-- ```html -->
+<image mode="aspectFill" class="tree_bg" src="/images/background_view.jpg"> </image>
+<view class="return" bindtap="before">
+	<van-icon name="arrow-left" size="22px" color="#fff" />
+
+</view>
+
+<view class="box">
+	<view class="progress_box">
+		<progress percent="{{pro}}"
+		 show-info 
+		 active 
+		 active-mode="forwards"
+		 duration="200"
+		 stroke-width="24"
+		 border-radius="30"
+     font-size="30rpx"
+			></progress>
+	</view>
+
+	<view style="color:#fff;margin-top:8rpx;text-align:center;font-size:24rpx">再浇水<text class="waternum">{{1000-waternum}}g</text>水滴，小树将茁壮成长为茂盛大树～</view>
+	<!-- 树 -->
+	<view bindanimationend="treeend" class="tree {{shutree?'a-swing':''}}">
+		<!-- 大树 -->
+		<image wx:if="{{waternum==1000}}" class="shumu" mode="aspectFill" src="/images/tree4.png"></image>
+		<image wx:if="{{waternum>=600 && waternum<1000}}" class="zhongshu" mode="aspectFill" src="/images/tree3.png"></image>
+		<image wx:if="{{waternum>=200 && waternum<600}}" class="xiaoshu" mode="aspectFill" src="/images/tree2.png"></image>
+		<image wx:if="{{waternum>=0 && waternum<200}}" class="youshu" mode="aspectFill" src="/images/tree1.png"></image>
+		<image mode="aspectFill" class="shupan" src="/images/tree_base.png"></image>
+		<image wx:if="{{waterbool}}" class="water" src="/images/water.png"></image>
+	</view>
+	<!-- /树 -->
+	<!-- 水瓶 -->
+	<view style="opacity:{{bottle?'1':'0'}}" bindanimationstart="bottlestart" bindanimationend="bottleend"
+		class="bottle {{tree?'bottle-fadeIn':''}}  ">
+		<image mode="aspectFill" src="/images/kettle.png"></image>
+
+	</view>
+	<!--/水瓶-->
+	<!-- 雨水 -->
+	<view class="rain_box">
+		<view class="line line1">
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+		</view>
+		<view class="line line2">
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+		</view>
+		<view class="line line3">
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+		</view>
+	</view>
+	<!-- 选项 -->
+	<view class="flex-between bot_s">
+		<!-- 答题、签到、扫描 -->
+		<view class="left_tab flex-around">
+			<image bindtap="answer" mode="aspectFill" src="/images/answer.png"></image>
+			<image bindtap="tosign" mode="aspectFill" src="/images/to_sign.png"></image>
+			<image bindtap="shaomiao" mode="aspectFill" src="/images/scan.png"></image>
+		</view>
+		<!-- 水壶和水壶托盘 -->
+		<view>
+			<view class="imgs_box" bindtap="animation">
+				<image mode="aspectFill" class="shuipan" src="/images/kettle_back.png"></image>
+				<image mode="aspectFill" class="shuihu" src="/images/kettle.png"></image>
+				<view class="text">{{energy}}g</view>
+			</view>
+		</view>
+	</view>
+	<!-- /雨水 -->
+	<!-- <view type="button" id="btn" bindtap="animation">浇水</view> -->
+</view>
